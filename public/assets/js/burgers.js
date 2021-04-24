@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   // UPDATE
-  const devourButton = document.querySelectorAll('.change-devour');
+  const devourButton = document.querySelectorAll('.devour');
 
   // Set up the event listener for the create button
   if (devourButton) {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
         burgername: document.getElementById('br').value.trim(),
-        devoured: document.getElementById('devoured').checked,
+        // devoured: document.getElementById('devoured').checked,
       };
 
       // Send POST request to create a new quote
